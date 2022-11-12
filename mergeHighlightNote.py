@@ -10,7 +10,7 @@ with open(filepath, 'r') as f:
         merged = highlight + '    Note:    ' + note
         data[idx-4] = merged
         for i in [-3, 2]:
-            data[idx+1] = "".strip()
+            data[idx+i] = "".strip()
 with open(filepath, 'w') as f:
     f.writelines(data)
 
